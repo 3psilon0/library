@@ -1,0 +1,109 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    background: linear-gradient(90deg, #3A3A3A, black);    
+}
+
+header {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    grid-row: 2 / 3;
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.main-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.add-button {
+    outline: none;
+    border: none;
+    background: url(./assets/icons/add.png) no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 400px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    color: wheat;
+    background-color: #1A1A1A;
+    border-radius: 10px;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card-read {
+    background: url(./assets/icons/read.png) no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+    background-color: green;
+    border: none;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;    
+}
+
+.card-unread {
+    background: url(./assets/icons/unread.png) no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+    background-color: red;
+    border-radius: 100%;
+    border: none;
+    padding: 10px   ;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;    
+}
+
+.remove-book {
+    background: url(./assets/icons/remove.png) no-repeat scroll 0 0 transparent;
+    background-size: 100%;
+    border: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
